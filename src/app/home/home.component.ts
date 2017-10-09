@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.newsService.findAllNews() //will return an observable with  list of news
-        .do(console.log)
+      //  .do(console.log)
         .subscribe(
             news => this.news = news
           );

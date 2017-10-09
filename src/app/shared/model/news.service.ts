@@ -10,8 +10,9 @@ export class NewsService {
 
 
   findAllNews(): Observable<News[]> {
-    return this.af.list('news')
-                .map(News.fromJsonList);
+    return this.af.list('news');
+              //  .do(console.log )
+                //.map(News.fromJsonList);
   }
 
 }

@@ -14,6 +14,10 @@ export class News {
 
   }
 
+static fromJsonList(array): News[] {
+    return array.map(News.fromJson);
+}
+
 static fromJson($key, $title, $imgUrl,  $favicon, $body, $timestamp, $author): News{
 
     return new News(
@@ -26,8 +30,6 @@ static fromJson($key, $title, $imgUrl,  $favicon, $body, $timestamp, $author): N
       $author);
 }
 
-static fromJsonList(array): News[] {
-    return array.map(News.fromJson);
-}
+
 
 }
