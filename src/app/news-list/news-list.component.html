@@ -1,0 +1,11 @@
+<table class="table lessons-list card card-strong">
+    <tbody>
+      <tr *ngFor="let _news of news" >
+        <td class="news-title">{{_news.title}}</td>
+        <td class="news-body">
+          <i class="md-icon duration-icon">access_time</i>
+          <span>{{_news.body}}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
